@@ -20,6 +20,33 @@ header {
   background-color: red;
   color: white;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: red; /* Or your header color */
+  color: white;
+}
+
+.cart-nav {
+  margin-left: auto;
+}
+
+#cart-button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#cart-button:hover {
+  background-color: #e6b800;
+}
+
 
 .logo {
   font-family: 'Pacifico', cursive;

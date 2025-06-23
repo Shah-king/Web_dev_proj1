@@ -8,110 +8,127 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-     <!-- Header -->
+    <!-- Header -->
     <header>
-        <div class="logo">Shah</div>
-        <nav>
-            <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="logo">Shah</div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+
     <!-- Hero Section -->
-  <section id="home" class="hero">
-    <h1>Welcome to Shah's Kitchen</h1>
-    <p>Delicious meals served fresh every day</p>
-    <a href="#menu" class="order-btn">Order Now</a>
-  </section>
-  <!-- Menu -->
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-grid">
-  <div class="menu-item">
-    <img src="images/Mac.jpg" alt="Mac and cheese">
-    <h3>Mac and cheese</h3>
-    <p>$3.99</p>
-  </div>
-  <div class="menu-item">
-    <img src="images/Fries.jpg" alt="Fries">
-    <h3>Fries</h3>
-    <p>$3.99</p>
-  </div>
-  <div class="menu-item">
-    <img src="images/Milkshake.jpg" alt="Milkshake">
-    <h3>Milkshake</h3>
-    <p>$4.50</p>
-  </div>
-  <div class="menu-item">
-    <img src="images/chicken.jpg" alt="Chicken Sandwich">
-    <h3>Chicken Sandwich</h3>
-    <p>$5.50</p>
-  </div>
-  <div class="menu-item">
-    <img src="images/Cheeseburger.jpg" alt="Cheeseburger">
-    <h3>Cheeseburger</h3>
-    <p>$6.50</p>
-  </div>
-  <div class="menu-item">
-    <img src="images/hotdog.jpg" alt="Hotdog">
-    <h3>Hotdog</h3>
-    <p>$2.50</p>
-  </div>
-</div>
+    <section id="home" class="hero">
+        <h1>Welcome to Shah's Kitchen</h1>
+        <p>Delicious meals served fresh every day</p>
+        <a href="#menu" class="order-btn">Order Now</a>
+    </section>
 
-  </section>
+    <!-- Menu -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/Mac.jpg" alt="Mac and cheese">
+                <h3>Mac and cheese</h3>
+                <p>$3.99</p>
+                <button class="add-to-cart" data-name="Mac and cheese" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Fries.jpg" alt="Fries">
+                <h3>Fries</h3>
+                <p>$3.99</p>
+                <button class="add-to-cart" data-name="Fries" data-price="3.99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Milkshake.jpg" alt="Milkshake">
+                <h3>Milkshake</h3>
+                <p>$4.50</p>
+                <button class="add-to-cart" data-name="Milkshake" data-price="4.50">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/chicken.jpg" alt="Chicken Sandwich">
+                <h3>Chicken Sandwich</h3>
+                <p>$5.50</p>
+                <button class="add-to-cart" data-name="Chicken Sandwich" data-price="5.50">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/Cheeseburger.jpg" alt="Cheeseburger">
+                <h3>Cheeseburger</h3>
+                <p>$6.50</p>
+                <button class="add-to-cart" data-name="Cheeseburger" data-price="6.50">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/hotdog.jpg" alt="Hotdog">
+                <h3>Hotdog</h3>
+                <p>$2.50</p>
+                <button class="add-to-cart" data-name="Hotdog" data-price="2.50">Add to Cart</button>
+            </div>
+        </div>
 
-  <!-- Gallery -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-slider">
-     <img src="images/Cheeseburger.jpg" alt="Cheeseburger" />
-      <img src="images/chicken.jpg" alt="Chicken Burger" />
-      <img src="images/Fries.jpg" alt="French Fries" />
-      <img src="images/Milkshake.jpg" alt="Milkshake" />
-      <img src="images/Mac.jpg" alt="Mac and Cheese" />
-      <img src="images/hotdog.jpg" alt="Hotdog" />
-    </div>
-  </section>
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: $0.00</p>
+        </section>
+    </section>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Founded in 2015 in the heart of the city, Shah’s Kitchen began as a humble food cart serving freshly grilled burgers and hand-cut fries to busy office workers and late-night wanderers. What started as one man’s dream to bring comfort food with a homemade touch quickly turned into a community favorite.
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-slider">
+            <img src="images/Cheeseburger.jpg" alt="Cheeseburger" />
+            <img src="images/chicken.jpg" alt="Chicken Burger" />
+            <img src="images/Fries.jpg" alt="French Fries" />
+            <img src="images/Milkshake.jpg" alt="Milkshake" />
+            <img src="images/Mac.jpg" alt="Mac and Cheese" />
+            <img src="images/hotdog.jpg" alt="Hotdog" />
+        </div>
+    </section>
 
-Our secret? Quality ingredients, bold flavors, and a lot of heart.
+    <!-- About -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded in 2015 in the heart of the city, Shah’s Kitchen began as a humble food cart serving freshly grilled burgers and hand-cut fries to busy office workers and late-night wanderers. What started as one man’s dream to bring comfort food with a homemade touch quickly turned into a community favorite.
+        <br><br>
+        Our secret? Quality ingredients, bold flavors, and a lot of heart.
+        <br><br>
+        We’re best known for our signature cheeseburger stack, creamy mac and cheese, and hand-spun milkshakes that bring back childhood memories. Every dish on our menu is crafted with care, no shortcuts, no compromises.
+        <br><br>
+        At Shah’s Kitchen, we believe that great food brings people together. Whether you're here for a quick bite or a casual meal with friends, our mission is to serve food that feels like home.
+        <br><br>
+        Come hungry. Leave happy.</p>
+    </section>
 
-We’re best known for our signature cheeseburger stack, creamy mac and cheese, and hand-spun milkshakes that bring back childhood memories. Every dish on our menu is crafted with care, no shortcuts, no compromises.
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <iframe src="https://maps.google.com/maps?q=New York&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </section>
 
-At Shah’s Kitchen, we believe that great food brings people together. Whether you're here for a quick bite or a casual meal with friends, our mission is to serve food that feels like home.
+    <!-- Footer -->
+    <footer>
+        <p>Follow us on 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a>
+        </p>
+        <p>Open Daily: 11am - 11pm</p>
+    </footer>
 
-Come hungry. Leave happy.</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <iframe src="https://maps.google.com/maps?q=New York&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>Follow us on 
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a>
-    </p>
-    <p>Open Daily: 11am - 11pm</p>
-  </footer>
-
+    <!-- JavaScript -->
+    <script src="cart.js"></script>
 </body>
 </html>
